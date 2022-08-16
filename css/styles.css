@@ -4,49 +4,6 @@
 /* Цвет текста при активности #2196F3 */
 
 /* Reset */
-:root {
-  --title-color: #212121;
-  --main-text-color: #757575;
-  --activ-text-color: #2196f3;
-  --icon-fill: #afb1b8;
-  --trans-duration: 250ms;
-  --trans-time-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  color: var(--main-text-color);
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
 
 /* Хедер */
 
@@ -161,84 +118,7 @@ ul {
 
 /* Герой */
 
-.hero {
-  height: 600px;
-  max-width: 1600px;
-  background: #c4c4c4;
-  padding: 200px;
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/icons/Img-bg-hero.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-title {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
-  margin-bottom: 30px;
-}
-
 /* Кнопки */
-
-.hero-button {
-  background-color: var(--activ-text-color);
-  color: #ffffff;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  display: inline-block;
-  border-color: transparent;
-  padding: 10px 32px;
-  border-radius: 4px;
-  min-width: 200px;
-  transition: background-color var(--trans-duration) var(--trans-time-function);
-}
-
-.portfolio-button {
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  color: #212121;
-  background-color: #f5f4fa;
-  cursor: pointer;
-  display: inline-block;
-  padding: 6px 22px;
-  border-radius: 4px;
-  min-width: 73px;
-  border-color: transparent;
-  transition: color var(--trans-duration) var(--trans-time-function),
-    background-color var(--trans-duration) var(--trans-time-function),
-    box-shadow var(--trans-duration) var(--trans-time-function);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: #ffffff;
-  background-color: var(--activ-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .section {
   padding: 94px 0;
@@ -634,32 +514,8 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  min-width: 200px;
-  background-color: var(--activ-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  border: none;
-  padding: 10px 29px;
-  margin-left: 12px;
-  transition: background-color var(--trans-duration) var(--trans-time-function);
-}
-
 .footer-submit-icon {
   fill: #ffffff;
-}
-
-.button-submit:hover,
-.button-submit:focus {
-  background-color: #188ce8;
 }
 
 .footer-btn-content {
@@ -698,28 +554,14 @@ ul {
   transition: transform var(--trans-duration) var(--trans-time-function);
 }
 
-.modal-button {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-icon {
-  transition: fill var(--trans-duration) var(--trans-time-function);
-}
-
 .modal-button:focus .modal-icon,
 .modal-button:hover .modal-icon {
   fill: var(--activ-text-color);
   cursor: pointer;
+}
+
+.modal-icon {
+  transition: fill var(--trans-duration) var(--trans-time-function);
 }
 
 .is-hidden {

@@ -1,0 +1,13 @@
+body {
+  color: var(--main-text-color);
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
