@@ -1,0 +1,108 @@
+.head-title {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0;
+  transition: color var(--trans-duration) var(--trans-time-function);
+}
+
+.head-list {
+  display: flex;
+  align-items: center;
+}
+
+.head-list .list {
+  display: flex;
+  align-items: center;
+}
+
+.head .list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu {
+  margin-left: 93px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.logo-color {
+  color: #2196f3;
+}
+
+.tel-mail {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  display: flex;
+  transition: color var(--trans-duration) var(--trans-time-function);
+}
+
+.head-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  transition: fill var(--trans-duration) var(--trans-time-function);
+}
+
+.head-title:hover,
+.head-title:focus,
+.head .tel-mail:hover,
+.head .tel-mail:focus,
+.foot-tel-mail:hover,
+.foot-tel-mail:focus {
+  color: var(--activ-text-color);
+}
+
+.tel-mail:hover > .head-icon,
+.tel-mail:focus > .head-icon {
+  fill: var(--activ-text-color);
+}
+
+.head-list .link.current {
+  color: var(--activ-text-color);
+}
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--activ-text-color);
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 0;
+  bottom: 0;
+}
+
+.head {
+  border-bottom: 1px solid #ececec;
+}

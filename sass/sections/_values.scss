@@ -1,0 +1,42 @@
+.values-list {
+  display: flex;
+}
+
+.values {
+  padding-bottom: 0;
+}
+
+.values-list .list {
+  width: 270px;
+}
+
+.values-icons {
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.values-list .list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.values-title {
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.values-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--main-text-color);
+}
