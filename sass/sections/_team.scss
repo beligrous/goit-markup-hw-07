@@ -43,21 +43,19 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--trans-duration) var(--trans-time-function);
+  &:hover,
+  &:focus {
+    background-color: var(--activ-text-color);
+  }
 }
 
 .member-icon {
   fill: var(--icon-fill);
   transition: fill var(--trans-duration) var(--trans-time-function);
-}
-
-.member-soc:hover,
-.member-soc:focus {
-  background-color: var(--activ-text-color);
-}
-
-.member-soc:hover > .member-icon,
-.member-soc:focus > .member-icon {
-  fill: #ffffff;
+  .member-soc:hover > &,
+  .member-soc:focus > & {
+    fill: #ffffff;
+  }
 }
 
 .member-connect {

@@ -6,6 +6,10 @@
 .client-icon {
   fill: var(--icon-fill);
   transition: fill var(--trans-duration) var(--trans-time-function);
+  .client:hover > &,
+  .client:focus > & {
+    fill: var(--activ-text-color);
+  }
 }
 
 .client {
@@ -17,15 +21,9 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color var(--trans-duration) var(--trans-time-function);
-}
-
-.client:hover > .client-icon,
-.client:focus > .client-icon {
-  fill: var(--activ-text-color);
-}
-
-.client:hover,
-.client:focus {
-  cursor: pointer;
-  border-color: var(--activ-text-color);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: var(--activ-text-color);
+  }
 }

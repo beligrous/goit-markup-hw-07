@@ -71,11 +71,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--trans-duration) var(--trans-time-function);
-}
-
-.work-list .link:hover .work-ower-text,
-.work-list .link:focus .work-ower-text {
-  transform: translateY(0);
+  .work-list .link:hover &,
+  .work-list .link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .work-card {
