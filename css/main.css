@@ -373,7 +373,7 @@ summary {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-submit {
+.btn-submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,10 +391,10 @@ summary {
   margin-left: 12px;
   transition: background-color var(--trans-duration) var(--trans-time-function);
 }
-.button-submit:hover, .button-submit:focus {
+.btn-submit:hover, .btn-submit:focus {
   background-color: #188ce8;
 }
-.modal-form > .button-submit {
+.modal-form > .btn-submit {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -680,7 +680,7 @@ summary {
   margin-top: 20px;
 }
 
-.foot-tel-mail {
+.foot-contact {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7142857143;
@@ -689,7 +689,7 @@ summary {
   margin-top: 9px;
   transition: color var(--trans-duration) var(--trans-time-function);
 }
-.foot-tel-mail:hover, .foot-tel-mail:focus {
+.foot-contact:hover, .foot-contact:focus {
   color: var(--activ-text-color);
 }
 
@@ -697,7 +697,7 @@ summary {
   margin-left: 70px;
 }
 
-.footer-title {
+.join__title {
   display: block;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -708,12 +708,12 @@ summary {
   margin-bottom: 20px;
 }
 
-.join-list {
+.join__list {
   display: flex;
   gap: 10px;
 }
 
-.join-soc {
+.join__soc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -723,23 +723,23 @@ summary {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--trans-duration) var(--trans-time-function);
 }
-.join-soc:hover, .join-soc:focus {
+.join__soc:hover, .join__soc:focus {
   background-color: var(--activ-text-color);
 }
 
-.join-icon {
+.join__icon {
   fill: #ffffff;
 }
 
-.footer-form {
+.foot-form {
   margin-left: 93px;
 }
 
-.footer-form-wrap {
+.form__wrap {
   display: flex;
 }
 
-.footer-field {
+.foot-form__input {
   display: inline;
   width: 358px;
   height: 50px;
@@ -749,7 +749,7 @@ summary {
   border-radius: 4px;
   padding: 15px 16px;
 }
-.footer-field::-moz-placeholder {
+.foot-form__input::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -758,7 +758,7 @@ summary {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-field:-ms-input-placeholder {
+.foot-form__input:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -767,7 +767,7 @@ summary {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-field::placeholder {
+.foot-form__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -777,11 +777,11 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-icon {
+.btn-submit__icon {
   fill: #ffffff;
 }
 
-.footer-btn-content {
+.btn-submit__title {
   margin-right: 10px;
 }
 
