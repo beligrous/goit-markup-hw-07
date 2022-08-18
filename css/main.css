@@ -204,11 +204,11 @@ summary {
 .head {
   border-bottom: 1px solid #ececec;
 }
-.head .list:not(:last-child) {
+.head .head__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.head-title {
+.head__title {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -218,32 +218,31 @@ summary {
   padding: 32px 0;
   transition: color var(--trans-duration) var(--trans-time-function);
 }
-.head-title:hover, .head-title:focus {
+.head__title:hover, .head__title:focus {
   color: var(--activ-text-color);
 }
 
-.head-list {
+.head__list {
   display: flex;
   align-items: center;
 }
-.head-list .list {
+.head__list .head__item {
   display: flex;
   align-items: center;
 }
-.head-list .link.current {
+.head__list .link.current {
   color: var(--activ-text-color);
-}
-
-.menu {
-  margin-left: 93px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
 }
+.navigation .navigation__menu {
+  margin-left: 93px;
+}
 
-.line {
+.head--row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,11 +256,11 @@ summary {
   line-height: 1.1923076923;
 }
 
-.logo-color {
+.logo--color {
   color: #2196f3;
 }
 
-.tel-mail {
+.head__contact {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -270,11 +269,11 @@ summary {
   display: flex;
   transition: color var(--trans-duration) var(--trans-time-function);
 }
-.head .tel-mail:hover, .head .tel-mail:focus {
+.head .head__contact:hover, .head .head__contact:focus {
   color: var(--activ-text-color);
 }
 
-.head-icon {
+.head__icon {
   margin-right: 10px;
   fill: var(--main-text-color);
   display: inline-flex;
@@ -282,7 +281,7 @@ summary {
   align-self: center;
   transition: fill var(--trans-duration) var(--trans-time-function);
 }
-.tel-mail:hover > .head-icon, .tel-mail:focus > .head-icon {
+.head__contact:hover > .head__icon, .head__contact:focus > .head__icon {
   fill: var(--activ-text-color);
 }
 

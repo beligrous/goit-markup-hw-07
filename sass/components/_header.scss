@@ -1,11 +1,11 @@
 .head {
   border-bottom: 1px solid #ececec;
-  & .list:not(:last-child) {
+  & .head__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.head-title {
+.head__title {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -20,10 +20,10 @@
   }
 }
 
-.head-list {
+.head__list {
   display: flex;
   align-items: center;
-  & .list {
+  & .head__item {
     display: flex;
     align-items: center;
   }
@@ -32,16 +32,15 @@
   }
 }
 
-.menu {
-  margin-left: 93px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
+  .navigation__menu {
+    margin-left: 93px;
+  }
 }
 
-.line {
+.head--row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,11 +54,11 @@
   line-height: calc(31 / 26);
 }
 
-.logo-color {
+.logo--color {
   color: #2196f3;
 }
 
-.tel-mail {
+.head__contact {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -73,15 +72,15 @@
   }
 }
 
-.head-icon {
+.head__icon {
   margin-right: 10px;
   fill: var(--main-text-color);
   display: inline-flex;
   justify-content: center;
   align-self: center;
   transition: fill var(--trans-duration) var(--trans-time-function);
-  .tel-mail:hover > &,
-  .tel-mail:focus > & {
+  .head__contact:hover > &,
+  .head__contact:focus > & {
     fill: var(--activ-text-color);
   }
 }
