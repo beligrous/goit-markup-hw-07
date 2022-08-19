@@ -27,10 +27,10 @@
   }
 }
 
-.modal-icon {
+.modal__icon {
   transition: fill var(--trans-duration) var(--trans-time-function);
-  .modal-button:focus &,
-  .modal-button:hover & {
+  .modal__button:focus &,
+  .modal__button:hover & {
     fill: var(--activ-text-color);
     cursor: pointer;
   }
@@ -42,7 +42,7 @@
   pointer-events: none;
 }
 
-.modal-form-title {
+.modal-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -51,7 +51,7 @@
   margin-bottom: 12px;
 }
 
-.modal-label {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
   font-style: normal;
@@ -62,7 +62,7 @@
   color: var(--main-text-color);
 }
 
-.field {
+.modal-form__field {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -78,18 +78,18 @@
   }
 }
 
-.modal-form-wrap {
+.modal-form__wrap {
   position: relative;
 }
 
-.form-icon {
+.modal-form__icon {
   position: absolute;
   top: 0;
   left: 12px;
   transform: translateY(50%);
   transition: fill var(--trans-duration) var(--trans-time-function);
-  .field:focus + &,
-  .field:hover + & {
+  .modal-form__field:focus + &,
+  .modal-form__field:hover + & {
     fill: var(--activ-text-color);
   }
 }
@@ -107,7 +107,7 @@
   }
 }
 
-.policy-label {
+.modal-policy__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,21 +116,21 @@
   line-height: calc(24 / 14);
 }
 
-.policy-link {
+.modal-policy__link {
   color: var(--activ-text-color);
 }
 
-.policy-check {
+.modal-policy__check {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
-  .policy-field:focus + .policy-label > & {
+  .modal-policy:focus + .modal-policy__label > & {
     border-color: var(--activ-text-color);
   }
-  .policy-field:checked + .policy-label > & {
-    background-image: url(../images/icons/icon\ check.svg);
+  .modal-policy:checked + .modal-policy__label > & {
+    background-image: url(../../images/icons/icon\ check.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--activ-text-color);
