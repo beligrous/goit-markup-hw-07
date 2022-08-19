@@ -27,13 +27,11 @@
 }
 
 .sub-title {
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  @include fonts(null, 14px, 16/14, null);
   text-transform: uppercase;
 }
 
 .values__text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  @include fonts(null, 14px, 24/14, null);
   color: var(--main-text-color);
 }

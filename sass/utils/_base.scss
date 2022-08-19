@@ -31,3 +31,10 @@ body {
   justify-content: center;
   display: flex;
 }
+
+@mixin fonts($weight, $size, $lheight, $lspasing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lheight;
+  letter-spacing: $lspasing;
+}
