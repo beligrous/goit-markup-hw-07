@@ -42,8 +42,8 @@
 
 .head--row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -76,8 +76,7 @@
   margin-right: 10px;
   fill: var(--main-text-color);
   display: inline-flex;
-  justify-content: center;
-  align-self: center;
+  @extend %centered;
   transition: fill var(--trans-duration) var(--trans-time-function);
   .head__contact:hover > &,
   .head__contact:focus > & {

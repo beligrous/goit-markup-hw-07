@@ -40,8 +40,7 @@
   height: 44px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered;
   transition: background-color var(--trans-duration) var(--trans-time-function);
   &:hover,
   &:focus {

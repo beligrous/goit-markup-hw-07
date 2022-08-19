@@ -18,8 +18,7 @@
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered;
   margin-bottom: 30px;
 }
 

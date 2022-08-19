@@ -57,8 +57,7 @@
 
 .join__soc {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered;
   width: 44px;
   height: 44px;
   border-radius: 50%;
