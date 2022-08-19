@@ -75,8 +75,7 @@
 .head__icon {
   margin-right: 10px;
   fill: var(--main-text-color);
-  display: inline-flex;
-  @extend %centered;
+  @extend %flex-centered;
   transition: fill var(--trans-duration) var(--trans-time-function);
   .head__contact:hover > &,
   .head__contact:focus > & {

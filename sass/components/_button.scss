@@ -47,8 +47,7 @@
 }
 
 .btn-submit {
-  display: flex;
-  @extend %centered;
+  @extend %flex-centered;
   height: 50px;
   min-width: 200px;
   background-color: var(--activ-text-color);
@@ -77,11 +76,10 @@
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
   width: 30px;
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  @extend %centered;
+  @extend %flex-centered;
 }

@@ -193,6 +193,7 @@ body {
 .modal-policy__label, .join__soc, .client, .team-member__soc, .values__icons, .modal__button, .btn-submit, .head__icon {
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 :root {
@@ -293,7 +294,6 @@ body {
 .head__icon {
   margin-right: 10px;
   fill: var(--main-text-color);
-  display: inline-flex;
   transition: fill var(--trans-duration) var(--trans-time-function);
 }
 .head__contact:hover > .head__icon, .head__contact:focus > .head__icon {
@@ -381,7 +381,6 @@ body {
 }
 
 .btn-submit {
-  display: flex;
   height: 50px;
   min-width: 200px;
   background-color: var(--activ-text-color);
@@ -409,7 +408,6 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-  display: flex;
   width: 30px;
   height: 30px;
   background: #ffffff;
@@ -436,7 +434,6 @@ body {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  display: flex;
   margin-bottom: 30px;
 }
 
@@ -518,7 +515,6 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
   transition: background-color var(--trans-duration) var(--trans-time-function);
 }
 .team-member__soc:hover, .team-member__soc:focus {
@@ -553,7 +549,6 @@ body {
 }
 
 .client {
-  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -699,7 +694,6 @@ body {
 }
 
 .join__soc {
-  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -885,7 +879,6 @@ body {
 }
 
 .modal-policy__label {
-  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;

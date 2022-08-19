@@ -17,8 +17,7 @@
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  display: flex;
-  @extend %centered;
+  @extend %flex-centered;
   margin-bottom: 30px;
 }
 

@@ -13,8 +13,7 @@
 }
 
 .client {
-  display: flex;
-  @extend %centered;
+  @extend %flex-centered;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
