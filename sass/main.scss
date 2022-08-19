@@ -1,12 +1,11 @@
 @import "./utils/reset";
+@import "./utils/normalize";
 @import "./utils/base";
 @import "./utils/vars";
-@import "./utils/normalize";
 @import "./components/visually-hiden";
 @import "./components/header";
-@import "./components/section-title";
 @import "./sections/hero";
-@import "./components/_button";
+@import "./components/button";
 @import "./sections/values";
 @import "./sections/doing";
 @import "./sections/team";

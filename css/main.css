@@ -19,33 +19,6 @@ ul {
   list-style: none;
 }
 
-body {
-  color: var(--main-text-color);
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
-
-.section {
-  padding: 94px 0;
-}
-
-:root {
-  --title-color: #212121;
-  --main-text-color: #757575;
-  --activ-text-color: #2196f3;
-  --icon-fill: #afb1b8;
-  --trans-duration: 250ms;
-  --trans-time-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,
 ::after,
@@ -187,6 +160,45 @@ summary {
   display: list-item;
 }
 
+body {
+  color: var(--main-text-color);
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.image {
+  display: block;
+}
+
+:root {
+  --title-color: #212121;
+  --main-text-color: #757575;
+  --activ-text-color: #2196f3;
+  --icon-fill: #afb1b8;
+  --trans-duration: 250ms;
+  --trans-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -300,14 +312,6 @@ summary {
   bottom: 0;
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
-
 .hero {
   height: 600px;
   max-width: 1600px;
@@ -320,7 +324,7 @@ summary {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
@@ -330,7 +334,7 @@ summary {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   background-color: var(--activ-text-color);
   color: #ffffff;
   font-family: inherit;
@@ -347,7 +351,7 @@ summary {
   min-width: 200px;
   transition: background-color var(--trans-duration) var(--trans-time-function);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -414,7 +418,7 @@ summary {
   justify-content: center;
 }
 
-.values-list {
+.values__list {
   display: flex;
 }
 
@@ -422,11 +426,14 @@ summary {
   padding-bottom: 0;
 }
 
-.values-list .list {
+.values__item {
   width: 270px;
 }
+.values__item:not(:last-child) {
+  margin-right: 30px;
+}
 
-.values-icons {
+.values__icons {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -436,11 +443,7 @@ summary {
   margin-bottom: 30px;
 }
 
-.values-list .list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.values-title {
+.values__title {
   color: var(--title-color);
   margin-bottom: 10px;
 }
@@ -451,18 +454,18 @@ summary {
   text-transform: uppercase;
 }
 
-.values-text {
+.values__text {
   font-size: 14px;
   line-height: 1.7142857143;
   color: var(--main-text-color);
 }
 
-.doing-list {
+.doing__list {
   display: flex;
   justify-content: space-between;
 }
 
-.doing-title {
+.doing__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -474,7 +477,7 @@ summary {
   padding: 27px 0;
 }
 
-.doing-list > .list {
+.doing__item {
   position: relative;
 }
 
@@ -539,10 +542,6 @@ summary {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.image {
-  display: block;
 }
 
 .client-list {

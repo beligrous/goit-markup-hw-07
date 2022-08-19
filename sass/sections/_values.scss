@@ -1,4 +1,4 @@
-.values-list {
+.values__list {
   display: flex;
 }
 
@@ -6,11 +6,14 @@
   padding-bottom: 0;
 }
 
-.values-list .list {
+.values__item {
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.values-icons {
+.values__icons {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -20,11 +23,7 @@
   margin-bottom: 30px;
 }
 
-.values-list .list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.values-title {
+.values__title {
   color: var(--title-color);
   margin-bottom: 10px;
 }
@@ -35,7 +34,7 @@
   text-transform: uppercase;
 }
 
-.values-text {
+.values__text {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--main-text-color);

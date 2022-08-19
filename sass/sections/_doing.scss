@@ -1,9 +1,9 @@
-.doing-list {
+.doing__list {
   display: flex;
   justify-content: space-between;
 }
 
-.doing-title {
+.doing__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -15,6 +15,6 @@
   padding: 27px 0;
 }
 
-.doing-list > .list {
+.doing__item {
   position: relative;
 }
