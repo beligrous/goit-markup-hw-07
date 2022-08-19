@@ -3,7 +3,7 @@
   gap: 30px;
 }
 
-.client-icon {
+.client__icon {
   fill: var(--icon-fill);
   transition: fill var(--trans-duration) var(--trans-time-function);
   .client:hover > &,
