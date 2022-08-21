@@ -46,7 +46,7 @@
 .logo {
   @include fonts(700, 26px, 31/26, null);
   color: #000000;
-  font-family: "Raleway", sans-serif;
+  font-family: $secondaryFont;
 }
 
 .logo--color {

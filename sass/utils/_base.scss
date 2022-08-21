@@ -1,7 +1,20 @@
+%flex-centered {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@mixin fonts($weight, $size, $lheight, $lspasing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lheight;
+  letter-spacing: $lspasing;
+}
+
 body {
   color: var(--main-text-color);
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: $primeryFont;
   letter-spacing: 0.03em;
 }
 
@@ -16,25 +29,11 @@ body {
   padding: 94px 0;
 }
 .section-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  @include fonts(null, 36px, 42/36, null);
   text-align: center;
   color: var(--title-color);
   margin-bottom: 50px;
 }
 .image {
   display: block;
-}
-
-%flex-centered {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-@mixin fonts($weight, $size, $lheight, $lspasing) {
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $lheight;
-  letter-spacing: $lspasing;
 }

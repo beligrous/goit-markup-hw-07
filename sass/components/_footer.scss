@@ -86,7 +86,7 @@
   padding: 15px 16px;
   &::placeholder {
     @include fonts(null, 16px, 20/16, 0.03em);
-    font-family: "Roboto";
+    font-family: $primeryFont;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
   }
